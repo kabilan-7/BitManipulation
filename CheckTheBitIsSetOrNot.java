@@ -1,17 +1,10 @@
 package bitmanipulation;
 
 public class CheckTheBitIsSetOrNot {
-    static class Pair{
-        int num;
-        int freq;
-        Pair(int num,int freq){
-            this.num=num;
-            this.freq=freq;
-        }
-        
-    }
     public static void main(String[] args) {
-        Pair pair = new Pair(2,3);
-        System.out.println(pair.freq);
+        int n=13;
+        int i=2;
+        if(((n>>i)&1)==0) System.out.println("the bit is not set");
+        else System.out.println("the bit is set");
     }
 }
